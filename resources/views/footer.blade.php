@@ -58,7 +58,7 @@
                 <div class="col-lg-4 col-md-6">
                     <img class="img-fluid text-white" src="img/icon/dbs-logo.png" alt="Icon" style=" height: 40px;">
                     <p></p>
-                    <a class="btn btn-link" href="project">Project</a>
+                    <a class="btn btn-link" href="project">Projects</a>
                     <a class="btn btn-link" href="">Kontak</a>
                     <a class="btn btn-link" href="about">Tentang Kami</a>
                     <a class="btn btn-link" href="faq">FAQ</a>
