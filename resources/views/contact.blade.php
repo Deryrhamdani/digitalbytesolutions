@@ -81,6 +81,18 @@
                                     <label for="email">Email</label>
                                 </div>
                             </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="service">
+                                        <option selected>Website Profile</option>
+                                        <option value="">Website Aplikasi</option>
+                                        <option value="">Mobile Aplikasi</option>
+                                        <option value="">Layanan Desain</option>
+                                    </select>
+                                    <label for="service">Pilih Layanan</label>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
@@ -88,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-dark rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-dark rounded-pill py-3 px-5" type="submit">Kirim Sekarang!</button>
                             </div>
                         </div>
                     </form>
@@ -113,6 +125,7 @@
                             <span>+62 5345 67890</span>
                         </div>
                     </div>
+
                     <div class="d-flex border-bottom-0 pb-3 mb-3">
                         <div class="flex-shrink-0 btn-square bg-dark rounded-circle">
                             <i class="fa fa-envelope text-white"></i>

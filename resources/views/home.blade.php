@@ -301,13 +301,6 @@
                         meningkatkan kepercayaan dan profesionalitas, serta memberikan aksesibilitas yang lebih luas
                         bagi pengguna. Dalam lingkungan bisnis yang semakin terhubung secara online, memiliki website
                         yang baik menjadi suatu keharusan.</p>
-
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-white" href="">
-                        <span class="btn-lg-square bg-white" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-dark"></i>
-                        </span>
-                        <span class="fs-5 fw-medium mx-4 text-white">+62 5345 67890</span>
-                    </a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <h2 class="mb-4 text-white">Dapatkan penawaran gratis</h2>
