@@ -114,6 +114,7 @@
                                     <div class="border-bottom p-4 mb-4">
                                         <h4 class="text-primary-gradient mb-1">Eksklusif</h4>
                                         <span>Rekomendasi untuk Perusahaan</span>
+                                      
                                     </div>
                                     <div class="p-4 pt-0">
                                         <h1 class="mb-3">
