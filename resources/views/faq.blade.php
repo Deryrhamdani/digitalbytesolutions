@@ -96,7 +96,7 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-xxl  mb-5 px-0  wow fadeIn" data-wow-delay="0.1s">
+    <div class="container- wow fadeIn" data-wow-delay="0.1s">
         <img class="w-100" src="img/contents/faq.png" alt="Image">
     </div>
     <!-- Page Header End -->
