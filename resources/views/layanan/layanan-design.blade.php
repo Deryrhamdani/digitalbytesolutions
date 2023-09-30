@@ -2,6 +2,7 @@
     <html lang="en">
 
     <head>
+        @include('gtag')
         <meta charset="utf-8">
         <title> Layanan Design | Digital Byte Solutions</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -33,12 +34,19 @@
     </head>
 
     <body>
-        <!-- Header Start -->
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-dark" role="status" style="width: 3rem; height: 3rem;"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar -->
         @include('header')
-        <!-- Header End -->
+        <!-- End Navbar -->
+
         <!-- Page Header Start -->
-        <div class="container-fluid mb-5 px-0  wow fadeIn" data-wow-delay="0.1s">
-            <img class="w-100" src="img/contents/image-layanan-desain.png" alt="Image">
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <img class="w-100 border-image" src="img/contents/image-layanan-desain.png" alt="Image">
         </div>
         <!-- Page Header End -->
 
@@ -46,16 +54,16 @@
         <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-3">
+                        <img class="image-responsive wow fadeInUp" data-wow-delay="0.5s" src="img/icon/content-design.png">
+                    </div>
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-dark">Sekilas tentang</h5>
                         <h1 class="mb-4 text-dark">Layanan Desain</h1>
-                        <p class="mb-4">Layanan desain ini sangat embantu Anda dalam menciptakan atau memperbaiki elemen-elemen desain. Layanan ini meliputi berbagai bidang seperti desain grafis, web, produk dan masih banyak lagi. Selain itu Layanan desain membantu menciptakan tampilan yang profesional dan terpercaya untuk merek atau bisnis Anda. Desain yang baik dapat meningkatkan citra perusahaan, memberikan kesan bahwa Anda serius dalam bisnis Anda, dan membangun kepercayaan dengan pelanggan atau pengguna.</p>
+                        <p class="mb-4 text-justify">Layanan desain ini sangat embantu Anda dalam menciptakan atau memperbaiki elemen-elemen desain. Layanan ini meliputi berbagai bidang seperti desain grafis, web, produk dan masih banyak lagi. Selain itu Layanan desain membantu menciptakan tampilan yang profesional dan terpercaya untuk merek atau bisnis Anda. Desain yang baik dapat meningkatkan citra perusahaan, memberikan kesan bahwa Anda serius dalam bisnis Anda, dan membangun kepercayaan dengan pelanggan atau pengguna.</p>
 
                     </div>
 
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/icon/content-design.png">
-                    </div>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  @include('gtag')
   <meta charset="utf-8">
   <title>Home | Digital Byte Solutions</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -43,124 +44,38 @@
   <!-- Spinner End -->
 
   <!-- Topbar Start -->
-  <div class="container-fluid bg-dark text-white d-none d-lg-flex">
-    <div class="container py-3">
-      <div class="d-flex align-items-center">
-        <img class="img-fluid text-white" src="img/icon/dbs-logo.png" alt="Icon" style=" height: 55px;">
-        <a href="/">
-          <!-- <h4 class="text-white fw-bold m-0">Digital Byte Solutions</h4> -->
-        </a>
-        <div class=" ms-auto d-flex align-items-center">
-          <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Bogor, Jawa Barat-Indonesia</small>
-          <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+62 5345 67890</small>
-          <div class="ms-3 d-flex">
-            <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href=""><i
-                class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href=""><i
-                class="fa fa-envelope" aria-hidden="true"></i></i></a>
-          </div>
-        </div>
+  @include('header')
+
+  <!-- Carousel Start -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img class="w-100 " src="img/contents/carousel-3.png" alt="Image">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img class="w-100 " src="img/contents/carousel-4.png" alt="Image">
+      </div>
+      <div class="carousel-item">
+        <img class="w-100 " src="img/contents/carousel-5.png" alt="Image">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <!-- Topbar End -->
-
-  <!-- Navbar Start -->
-  <div class="container-fluid bg-white sticky-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-            <a href="/" class="nav-item nav-link active">Home</a>
-            <div class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
-              <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                <a href="web-profile" class="dropdown-item">Website Profile</a>
-                <a href="web-aplikasi" class="dropdown-item">Website Aplikasi</a>
-                <a href="mobile-app" class="dropdown-item">Mobile Aplikasi</a>
-                <a href="layanan-design" class="dropdown-item">Layanan Desain</a>
-              </div>
-            </div>
-            <a href="project" class="nav-item nav-link">Projects</a>
-            <a href="contact" class="nav-item nav-link">Kontak</a>
-            <a href="about" class="nav-item nav-link">Tentang Kami</a>
-          </div>
-          <div class="ms-auto d-none d-lg-block">
-            <a href="" class="btn btn-outline-dark rounded-pill py-2 px-3  ">Dapatkan
-              Penawaran</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-  <!-- Navbar End -->
-  <div class="container px-0 mb-5">
-
-    <div id="carouselHome" class="carousel slide" data-ride="carousel">
-      {{-- <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol> --}}
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="w-100 d-block" src="img/contents/carousel-3.png" alt="Image">
-        </div>
-        <div class="carousel-item">
-          <img class="w-100 d-block" src="img/contents/carousel-4.png" alt="Image">
-        </div>
-        <div class="carousel-item">
-          <img class="w-100 d-block" src="img/contents/carousel-5.png" alt="Image">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
-  {{-- <div class="container-fluid px-0 mb-5">
-    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="w-100" src="img/contents/carousel-3.png" alt="Image">
-
-        </div>
-        <div class="carousel-item">
-          <img class="w-100" src="img/contents/carousel-4.png" alt="Image">
-
-        </div>
-        <div class="carousel-item">
-          <img class="w-100" src="img/contents/carousel-5.png" alt="Image">
-
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div> --}}
   <!-- Carousel End -->
 
 
   <!-- layanan Start -->
   <div class="container-xxl py-5">
     <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <h1 class="display-5 mb-5">Layanan Digital yang Kami Tawarkan</h1>
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class=" mb-5">Layanan Digital yang Kami Tawarkan</h1>
       </div>
       <div class="row g-4">
         <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -170,13 +85,16 @@
                 <img class="img-fluid" src="img/icon/icon-web-profile.png" alt="Icon">
               </div>
               <h5 class="mb-3">Website Profile</h4>
-                <p class="mb-0">Dirancang khusus untuk memberikan gambaran menyeluruh tentang entitas
+                <p class="mb-0 limited-paragraph">Dirancang khusus untuk memberikan gambaran menyeluruh tentang entitas
                   yang dipresentasikan dan memberikan kesan profesional serta membangun</p>
+                <div class="mt-3">
+                  <div class="ms-auto d-lg-block">
+                    <a href="web-profile" class="btn btn-outline-dark rounded-pill py-2 px-3"
+                      style="font-size: 12px;">Selengkapnya</a>
+                  </div>
+                </div>
             </div>
-            <div class="service-btn rounded-0 rounded-bottom">
-              <a class="text-dark fw-medium" href="web-profile">Selengkapnya<i
-                  class="bi bi-chevron-double-right ms-2"></i></a>
-            </div>
+
           </div>
         </div>
         <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
@@ -186,15 +104,19 @@
                 <img class="img-fluid" src="img/icon/icon-web-aplikasi.png" alt="Icon">
               </div>
               <h5 class="mb-3">Website Aplikasi</h4>
-                <p class="mb-0">Aplikasi web dapat memiliki fungsi yang beragam, seperti platform
+                <p class="mb-0 limited-paragraph">Aplikasi web dapat memiliki fungsi yang beragam, seperti platform
                   e-commerce, sistem manajemen konten, alat kolaborasi, atau aplikasi berbasis data
                   dan masih banyak lagi
                 </p>
+                <div class="mt-3">
+                  <div class="ms-auto d-lg-block">
+                    <a href="web-aplikasi" class="btn btn-outline-dark rounded-pill py-2 px-3"
+                      style="font-size: 12px;">Selengkapnya</a>
+                  </div>
+                </div>
+
             </div>
-            <div class="service-btn rounded-0 rounded-bottom">
-              <a class="text-dark fw-medium" href="web-aplikasi">Selengkapnya<i
-                  class="bi bi-chevron-double-right ms-2"></i></a>
-            </div>
+
           </div>
         </div>
         <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
@@ -204,13 +126,17 @@
                 <img class="img-fluid" src="img/icon/icon-mobile-app.png" alt="Icon">
               </div>
               <h5 class="mb-3">Mobile Aplikasi </h4>
-                <p class="mb-0">Aplikasi Mobile yang dirancang untuk memberikan pengalaman pengguna yang
+                <p class="mb-0 limited-paragraph">Aplikasi Mobile yang dirancang untuk memberikan pengalaman pengguna
+                  yang
                   optimal pada perangkat mobile. Memiliki akses cepat serta mudah digunakan</p>
+                <div class="mt-3">
+                  <div class="ms-auto d-lg-block">
+                    <a href="mobile-app" class="btn btn-outline-dark rounded-pill py-2 px-3"
+                      style="font-size: 12px;">Selengkapnya</a>
+                  </div>
+                </div>
             </div>
-            <div class="service-btn rounded-0 rounded-bottom">
-              <a class="text-dark fw-medium" href="mobile-app">Selengkapnya<i
-                  class="bi bi-chevron-double-right ms-2"></i></a>
-            </div>
+
           </div>
         </div>
         <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -220,26 +146,31 @@
                 <img class="img-fluid" src="img/icon/icon-design.png" alt="Icon">
               </div>
               <h5 class="mb-3">Layanan Desain</h4>
-                <p class="mb-0">Membantu Anda dalam menciptakan atau memperbaiki elemen-elemen desain.
+                <p class="mb-0 limited-paragraph">Membantu Anda dalam menciptakan atau memperbaiki elemen-elemen desain.
                   Layanan ini meliputi berbagai bidang seperti desain grafis, web, produk dan masih
                   banyak lagi</p>
-            </div>
-            <div class="service-btn rounded-0 rounded-bottom">
-              <a class="text-dark fw-medium" href="layanan-design">Selengkapnya<i
-                  class="bi bi-chevron-double-right ms-2"></i></a>
+                <div class="mt-3">
+                  <div class="ms-auto d-lg-block">
+                    <a href="layanan-design" class="btn btn-outline-dark rounded-pill py-2 px-3"
+                      style="font-size: 12px;">Selengkapnya</a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
+  </div>
+
   <!-- Layanan End -->
 
   <!-- Komitmen Start -->
   <div class="container-xxl py-5">
     <div class="container">
       <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <h1 class="display-5 mb-5">Komitmen Kami</h1>
+        <h1 class=" mb-5">Komitmen Kami</h1>
       </div>
       <div class=" row g-0 feature-row align-items-center bg-dark rounded">
         <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.4s">
@@ -284,8 +215,8 @@
   <!-- Project Start -->
   <div class="container-xxl pt-5">
     <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <h1 class="display-5 mb-5">Project yang sudah Kami kerjakan</h1>
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class=" mb-5">Project yang sudah Kami kerjakan</h1>
       </div>
       <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
         <div class="project-item mb-5">
@@ -322,11 +253,11 @@
 
 
   <!-- Quote Start -->
-  <div class="container-xxl py-5 bg-dark">
+  <div class="container-fluid py-5 bg-dark">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <h1 class="display-5 mb-4 text-white ">Yakin masih belum mau digital ? </h1>
+          <h1 class="mb-4 text-white ">Yakin masih belum mau digital ? </h1>
           <p class="text-white">Website merupakan platform yang sangat efektif untuk menyampaikan informasi
             tentang produk, layanan, atau organisasi Anda kepada pengguna. Anda dapat memberikan detail
             lengkap tentang apa yang Anda tawarkan, deskripsi produk, harga, kontak, dan informasi penting
@@ -390,8 +321,8 @@
   <!-- Team Start -->
   <div class="container-xxl py-5">
     <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <h1 class="display-5 mb-5">Kami siap membantu Anda</h1>
+      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class=" mb-5">Kami siap membantu Anda</h1>
       </div>
       <div class="row g-4 ">
         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -458,7 +389,7 @@
       <div class="text-center mx-auto  text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
         style="max-width: 500px;">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-          <h1 class="display-5 mb-5">Klien setia Kami</h1>
+          <h1 class=" mb-5">Klien setia Kami</h1>
         </div>
       </div>
       <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
@@ -479,10 +410,9 @@
   <!-- FAQ Start -->
   <div class="container-xxl pt-5">
     <div class="container">
-      <div class="text-center mx-auto text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
-        style="max-width: 500px;">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-          <h1 class="display-5 mb-5">Pertanyaan yang Sering Diajukan</h1>
+      <div class="text-center mx-auto text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class=" mb-5">Pertanyaan yang Sering Diajukan</h1>
         </div>
       </div>
       <div class="accordion-block wow fadeInUp" data-wow-delay="0.3 ">

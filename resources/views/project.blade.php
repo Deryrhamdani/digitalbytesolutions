@@ -33,11 +33,17 @@
 </head>
 
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-dark" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar -->
     @include('header')
-
+    <!-- End Navbar -->
 
     <!-- Page Header Start -->
-    <div class="container-xxl  mb-5 px-0  wow fadeIn" data-wow-delay="0.1s">
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
         <img class="w-100" src="img/contents/projects.png" alt="Image">
     </div>
     <!-- Page Header End -->

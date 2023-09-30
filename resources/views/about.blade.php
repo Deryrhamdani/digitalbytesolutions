@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @include('gtag')
     <meta charset="utf-8">
     <title>Tentang Kami - Digital Byte Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -34,51 +35,57 @@
 
 <body>
 
-    <!-- Navbar Start -->
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-dark" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar -->
     @include('header')
-    <!-- Navbar End -->
+    <!-- End Navbar -->
 
     <!-- Page Header Start -->
-    <div class="container-xxl  mb-5 px-0  wow fadeIn" data-wow-delay="0.1s">
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
         <img class="w-100" src="img/contents/about.png" alt="Image">
     </div>
 
     <!-- Page Header End -->
 
-     <!-- Deskripsi 1 Start -->
-     <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-            <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                    <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/contents/content-about1.png">
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-dark">Sekilas Tentang Kami</h5>
-                    <p class="mb-4">Digital Byte Solutions siap untuk memberikan solusi digital yang inovatif dan berkualitas kepada klien-klien kami. Dengan memadukan desain yang menarik, fungsionalitas yang canggih, dan pengalaman pengguna yang intuitif, kami berkomitmen untuk menciptakan website yang memenuhi kebutuhan dan tujuan bisnis Anda.</p>
-                    <p class="mb-4">Kami memahami betapa pentingnya kehadiran online yang efektif dalam era digital ini. Oleh karena itu, tim kami terdiri dari para ahli yang berpengalaman di bidang desain web, pengembangan perangkat lunak, dan strategi digital. Dengan pengetahuan dan keterampilan yang mendalam, kami dapat membantu Anda membangun dan mengembangkan keberadaan online yang kuat.</p>
-                </div>
+    <!-- Deskripsi 1 Start -->
+    <div class="container wow fadeInUp" data-wow-delay="0.5s" ">
+        <div class=" container mt-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-3">
+                <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/contents/content-about1.png">
+            </div>
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-dark">Sekilas Tentang Kami</h5>
+                <p class="mb-4 text-justify">Digital Byte Solutions siap untuk memberikan solusi digital yang inovatif dan berkualitas kepada klien-klien kami. Dengan memadukan desain yang menarik, fungsionalitas yang canggih, dan pengalaman pengguna yang intuitif, kami berkomitmen untuk menciptakan website yang memenuhi kebutuhan dan tujuan bisnis Anda.</p>
+                <p class="mb-4 text-justify">Kami memahami betapa pentingnya kehadiran online yang efektif dalam era digital ini. Oleh karena itu, tim kami terdiri dari para ahli yang berpengalaman di bidang desain web, pengembangan perangkat lunak, dan strategi digital. Dengan pengetahuan dan keterampilan yang mendalam, kami dapat membantu Anda membangun dan mengembangkan keberadaan online yang kuat.</p>
             </div>
         </div>
+    </div>
     </div>
     <!-- Deskripsi 1 End -->
     <!-- Deskripsi 2  Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5 px-lg-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-4">Kami menyadari bahwa setiap bisnis memiliki kebutuhan yang unik. Oleh karena itu, kami menawarkan layanan yang dapat disesuaikan dengan kebutuhan Anda. Mulai dari pembuatan website yang responsif dan mobile-friendly, pengembangan aplikasi web kustom, hingga integrasi dengan sistem manajemen konten (CMS) dan e-commerce, kami memiliki kemampuan untuk menghadirkan solusi yang sesuai dengan tujuan dan visi Anda.</p>
-                    <p class="mb-4">Selain itu, kami juga memperhatikan aspek keamanan dan kecepatan website. Kami mengutamakan perlindungan data Anda dan memastikan bahwa website yang kami buat memiliki waktu muat yang cepat sehingga pengunjung dapat mengakses informasi dengan mudah dan nyaman.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/contents/content-about2.png">
-                </div>
+    <div class="container wow fadeInUp" data-wow-delay="0.5s" ">
+        <div class=" container mt-3">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-8  wow fadeInUp" data-wow-delay="0.1s">
+                <p class="mb-4 text-justify">Kami menyadari bahwa setiap bisnis memiliki kebutuhan yang unik. Oleh karena itu, kami menawarkan layanan yang dapat disesuaikan dengan kebutuhan Anda. Mulai dari pembuatan website yang responsif dan mobile-friendly, pengembangan aplikasi web kustom, hingga integrasi dengan sistem manajemen konten (CMS) dan e-commerce, kami memiliki kemampuan untuk menghadirkan solusi yang sesuai dengan tujuan dan visi Anda.</p>
+                <p class="mb-4 text-justify">Selain itu, kami juga memperhatikan aspek keamanan dan kecepatan website. Kami mengutamakan perlindungan data Anda dan memastikan bahwa website yang kami buat memiliki waktu muat yang cepat sehingga pengunjung dapat mengakses informasi dengan mudah dan nyaman.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/contents/content-about2.png">
             </div>
         </div>
     </div>
+    </div>
     <!-- Deskripsi 2  End -->
 
-     <!-- Komitmen Start -->
-     <div class="container-xxl py-5">
+    <!-- Komitmen Start -->
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-5">Komitmen Kami</h1>
@@ -124,8 +131,8 @@
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.3s" style="max-width: 500px;">
-                <h1 class="display-5 mb-5">Kami siap membantu Anda</h1>
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.3s">
+                <h1 class=" mb-5">Kami siap membantu Anda</h1>
             </div>
             <div class="row g-4 ">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -185,12 +192,12 @@
         </div>
     </div>
     <!-- Team End -->
-<!-- Testimonial Start -->
-<div class="container-xxl pt-5" id="clients">
+    <!-- Testimonial Start -->
+    <div class="container-xxl pt-5" id="clients">
         <div class="container">
             <div class="text-center mx-auto  text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <h1 class="display-5 mb-5">Klien setia Kami</h1>
+                    <h1 class="mb-5">Klien setia Kami</h1>
                 </div>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
