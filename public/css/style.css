@@ -406,6 +406,7 @@
 }
 
 
+
 /*** Header ***/
 .carousel-caption {
     top: 0;
@@ -425,9 +426,9 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
     background-color: var(--pur);
     border: 15px solid var(--pur);
 }
@@ -693,6 +694,7 @@
     padding-top: 0;
 }
 
+/* 
 .project-carousel .owl-nav {
     position: absolute;
     top: -100px;
@@ -736,7 +738,7 @@
         height: 45px;
         font-size: 20px;
     }
-}
+} */
 
 
 /*** Team ***/
@@ -827,7 +829,7 @@
     border-radius: 100px;
 }
 
-.testimonial-carousel .owl-nav {
+/* .testimonial-carousel .owl-nav {
     position: absolute;
     top: -100px;
     right: 0;
@@ -870,7 +872,7 @@
         height: 45px;
         font-size: 20px;
     }
-}
+} */
 
 
 /*** Footer ***/
@@ -918,13 +920,48 @@
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 
-  
+
     /* Set a specific height */
     height: 50%;
-  
+
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
+
+.limited-paragraph {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.limited-paragraph1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.border-image {
+    border-radius: 2%;
+}
+
+
+.image-responsive {
+    max-width: 60%;
+    height: auto;
+    justify-items: center;
+}
+
+
+.text-justify{
+    text-align: justify;
+}

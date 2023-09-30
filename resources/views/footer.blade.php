@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @include('gtag')
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -39,13 +40,13 @@
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Kantor Kami</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bogor, Jawa Barat-Indonesia</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 5345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>csdbs.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 852-1845-3441</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>cs.digitalbytesolutions@gmail.com</p>
                     <div class="d-flex pt-3">
-                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href=""><i class="fas fa-map-marker-alt text-dark"></i></a>
-                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa fa-phone-alt text-dark"></i></a>
-                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href=""><i class="fa fa-envelope text-dark"></i></a>
-                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-instagram text-dark"></i></a>
+                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href="https://www.google.com/maps?q=-6.5711313,106.7940812"><i class="fas fa-map-marker-alt text-dark"></i></a>
+                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href="https://wa.me/6285218453441"><i class="fab fa-whatsapp text-dark"></i></a>
+                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href="mailto:cs.digitalbytesolutions@gmail.com"><i class="fa fa-envelope text-dark"></i></a>
+                        <a class=" animated-button btn btn-square btn-light rounded-circle me-2" href="https://www.instagram.com/digitalbytesolutions/"><i class="fab fa-instagram text-dark"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @include('gtag')
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -33,12 +34,13 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-dark" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
+
     <div class="container-fluid bg-dark text-white d-none d-lg-flex">
         <div class="container py-3">
             <div class="d-flex align-items-center">
@@ -48,10 +50,10 @@
                 </a>
                 <div class=" ms-auto d-flex align-items-center">
                     <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Bogor, Jawa Barat-Indonesia</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+62 5345 67890</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+62 852-1845-3441</small>
                     <div class="ms-3 d-flex">
-                        <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href=""><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+                        <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href="https://www.instagram.com/digitalbytesolutions/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a class=" animated-button btn btn-sm-square btn-light text-dark rounded-circle ms-2" href="mailto:cs.digitalbytesolutions@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
                     </div>
                 </div>
             </div>
@@ -82,7 +84,7 @@
                         <a href="contact" class="nav-item nav-link">Kontak</a>
                         <a href="about" class="nav-item nav-link">Tentang Kami</a>
                     </div>
-                    <div class="ms-auto d-none d-lg-block">
+                    <div class="ms-auto d-lg-block">
                         <a href="" class="btn btn-outline-dark rounded-pill py-2 px-3  ">Dapatkan
                             Penawaran</a>
                     </div>
@@ -91,12 +93,6 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
