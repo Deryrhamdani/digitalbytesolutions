@@ -17,9 +17,12 @@ class CreatePagesTable extends Migration
             $table->uuid('uuid')->primary()->unique()->index();
             $table->string('name')->unique();
             $table->string('slug');
+            $table->boolean('is_publish');
             $table->string('created_by', 50);
             $table->string('updated_by', 50);
             $table->timestamps();
+
+            $table->index(['is_publish']);
         });
     }
 

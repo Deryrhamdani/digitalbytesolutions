@@ -14,8 +14,18 @@ class CreateLogInfosTable extends Migration
   public function up()
   {
     Schema::create('log_infos', function (Blueprint $table) {
-      $table->id();
+      $table->uuid('uuid')->primary()->unique();
+      $table->foreignUuid('foreign_id')->nullable();
+      $table->string('module');
+      $table->string('action');
+      $table->text('desc')->nullable();
+      $table->json('additional')->nullable();
+      $table->string('ip')->nullable();
+      $table->string('created_by', 50);
+      $table->string('updated_by', 50);
       $table->timestamps();
+
+      $table->index(['foreign_id', 'module', 'action']);
     });
   }
 

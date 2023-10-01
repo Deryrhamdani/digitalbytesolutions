@@ -15,16 +15,15 @@ class CreateSectionsTable extends Migration
     {
         Schema::create('sections', function (Blueprint $table) {
             $table->uuid('uuid')->primary()->unique();
-            $table->foreignUuid('page_id');
             $table->string('name')->unique();
             $table->string('slug');
-            $table->string('type');
             $table->boolean('is_publish');
+            $table->smallInteger('max_capacity')->default(1);
             $table->string('created_by', 50);
             $table->string('updated_by', 50);
             $table->timestamps();
 
-            $table->index(['is_publish', 'page_id']);
+            $table->index(['is_publish', 'max_capacity']);
         });
     }
 
