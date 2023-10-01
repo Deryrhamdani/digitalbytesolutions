@@ -72,3 +72,10 @@ Route::get('web-profile', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/logout', function () {
+    return view('auth.logout-test');
+})->name('test.logout');
